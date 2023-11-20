@@ -16,7 +16,8 @@
 \usepackage{tikz}
 
 %%% To add citations
-\usepackage[style=ieee,autocite=inline,backend=bibtex]{biblatex}
+\usepackage[backend=biber,style=ieee,autocite=inline,url=false]{biblatex}
+\AtBeginBibliography{\small}
 \addbibresource{references.bib}
 
 %%% Customize Theme %%%%%%%%%%%%%%%%%%%%%%
@@ -136,7 +137,6 @@
     \frametitle{Table of Contents} % Slide title, remove this command for no title
 
     \tableofcontents % Output the table of contents (all sections on one slide)
-    %\tableofcontents[pausesections] % Output the table of contents (break sections up across separate slides)
 \end{frame}
 
 %---------------------------------------------------------
@@ -152,174 +152,6 @@
 
 \input{content/05_review.tex}
 
-% \section{Motivation} % Note all sections and subsections are automatically placed in your table of contents
-
-% %------------------------------------------------
-% \begin{frame}
-%     \frametitle{Title}
-%     \begin{center}
-%         \textbf{To use this template, you can copy and just edit/add slides!}\newline
-%     \end{center}
-
-%     This is because all of the color customization occurs in the "Customize Themes" section in lines 12-51 of the code\newline
-
-%     The remainder of these slides serve as an example to show all the features you can use: bullets, buttons, sections, etc.
-
-%     \begin{center}
-%         \emph{This was a labor of love, I hope you like it!}
-%     \end{center}
-% \end{frame}
-
-% %------------------------------------------------
-% \begin{frame}
-%     \frametitle{Another Title}
-%     \framesubtitle{and a subtitle!}
-
-%     Look at the code of this slide to see how columns made this formatting look nice.
-
-%     % \begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-%     %     \begin{column}{0.5\textwidth} % Right column width
-%     %         % To add an image %
-%     %         \begin{figure}[h!]
-%     %             \centering
-%     %             %\caption{Hawkins et al, 2015}
-%     %             \includegraphics[angle=0, width=4.5cm]{Hokie2.png}
-%     %             %\label{Figure 1}
-%     %         \end{figure}
-%     %     \end{column}
-%     %     \begin{column}{0.5\textwidth} % Left column width
-%     %         \begin{figure}[h!]
-%     %             \centering
-%     %             %\caption{Hawkins et al, 2015}
-%     %             \includegraphics[angle=0, width=4.5cm]{Hokie2.png}
-%     %             %\label{Figure 1}
-%     %         \end{figure}
-%     %     \end{column}
-%     % \end{columns}
-% \end{frame}
-
-% %------------------------------------------------
-% \begin{frame}
-%     \frametitle{Yet another title}
-%     You can use bullets too:\newline
-%     \begin{itemize}
-%         \item Like this one\newline
-%         \item \& this one
-%     \end{itemize}
-% \end{frame}
-
-% %------------------------------------------------
-% \begin{frame}
-%     \label{Test} %For the link button for the Appendix slide
-%     \frametitle{A title}
-
-%     \begin{itemize}
-%         \item You can also nest sub-bullets
-%               \begin{itemize}
-%                   \item Sub-bullet 1
-%                   \item Sub-bullet 2
-%                   \item Sub-bullet 3
-%                   \item Sub-bullet 4 \newline
-%               \end{itemize}
-%     \end{itemize}
-
-%     You can add citations \footcite{Tjøstheim} too\newline
-
-%     \textbf{Below is a button that links to a slide in the appendix}
-
-%     \begin{center}
-%         \hyperlink{Figure}{\beamergotobutton{Go to graphs}}
-%     \end{center}
-% \end{frame}
-
-% %------------------------------------------------
-% \section{Theory}
-
-% %------------------------------------------------
-% \begin{frame}
-%     \label{Test Stat}
-%     \frametitle{The Test Statistic}
-
-%     Here is a made up equation:
-%     $$ \hat{A} = \bar{m}-\hat{m}_S$$ \newline
-
-%     Notice how these buttons are centered and evenly spread out:\newline
-
-%     \begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-%         \begin{column}{0.25\textwidth} % Right column width
-%             \hyperlink{Terms}{\beamergotobutton{Go to Terms}}
-%         \end{column}
-%         \begin{column}{0.25\textwidth} % Left column width
-%             \hyperlink{Definitions}{\beamergotobutton{Go to Definitions}}
-%         \end{column}
-%         \begin{column}{0.25\textwidth} % Left column width
-%             \hyperlink{Theorems}{\beamergotobutton{Go to Theorems}}
-%         \end{column}
-%     \end{columns}
-
-% \end{frame}
-
-% %------------------------------------------------
-% \begin{frame}
-%     \frametitle{No way, another title!}
-%     \begin{enumerate}
-%         \item Instead of bullets, you can index by number too\newline
-%         \item like this
-%     \end{enumerate}
-% \end{frame}
-
-% %------------------------------------------------
-% \section{Testing}
-
-% %------------------------------------------------
-% \begin{frame}
-%     \frametitle{Second to last title}
-%     \begin{block}{Block Title}
-%         Block 1
-%     \end{block}
-
-%     \begin{exampleblock}{Example Block Title}
-%         Block 2
-%     \end{exampleblock}
-
-%     \begin{alertblock}{Alert Block Title}
-%         Block 3
-%     \end{alertblock}
-
-%     \begin{block}{} % Block without title
-%         Block without a title
-%     \end{block}
-% \end{frame}
-
-% %------------------------------------------------
-% \section{Conclusion}
-% %------------------------------------------------
-% \begin{frame}
-%     \frametitle{Last title}
-
-%     Last bit of text
-
-% \end{frame}
-
-%---------------------------------------------------------
-%	CLOSING SLIDE
-%---------------------------------------------------------
-
-% To remove miniframe from top
-% \appendix
-% \setbeamertemplate{headline}{}
-% \addtobeamertemplate{frametitle}{\vspace*{-\headheight}}{}
-
-% \begin{frame}[noframenumbering] %So the end and appendix slides don't contribute to the page count
-%     %[plain] % The optional argument 'plain' hides the headline and footline
-%     %\frametitle{Questions?}
-
-%     \begin{center}
-%         {\LARGE Questions?}
-%     \end{center}
-
-% \end{frame}
-
 %---------------------------------------------------------
 %	REFERENCES
 %---------------------------------------------------------
@@ -328,67 +160,5 @@
     \frametitle{References}
     \printbibliography
 \end{frame}
-
-% %------------------------------------------------
-% \begin{frame}[noframenumbering]
-%     \label{Figure}
-%     \frametitle{Appendix - A figure}
-%     \hyperlink{Test}{\beamerreturnbutton{Return to presentation}}
-
-%     % \begin{figure}[h!]
-%     %     \centering
-%     %     %\caption{}
-%     %     \includegraphics[angle=0, width=5cm]{Newey et al Graph.png}
-%     %     %\label{fig}
-%     % \end{figure}
-% \end{frame}
-
-% %------------------------------------------------
-% \begin{frame}[noframenumbering]
-%     \label{Terms}
-%     \frametitle{Appendix - Terms}
-
-%     \begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-%         \begin{column}{0.5\textwidth} % Right column width
-%             Some Estimators:
-%             \begin{itemize}
-%                 \item Drift: $\hat{\delta}$
-%                 \item Boundary: $\hat{b}(t)$
-%             \end{itemize}
-%         \end{column}
-%         \begin{column}{0.5\textwidth} % Left column width
-%             Some Variables:
-%             \begin{itemize}
-%                 \item $\hat{V}$
-%                 \item $\hat{m}_S$
-%                 \item $\bar{m}$
-%                 \item $m_J(\tau)$\newline\newline
-%             \end{itemize}
-%         \end{column}
-%     \end{columns}
-%     \hyperlink{Test Stat}{\beamerreturnbutton{Return to presentation}}
-% \end{frame}
-
-% %------------------------------------------------
-% \begin{frame}[noframenumbering]
-%     \label{Definitions}
-%     \frametitle{Appendix - Definitions}
-%     \begin{enumerate}
-%         \item A definition \newline
-%     \end{enumerate}
-
-%     \hyperlink{Test Stat}{\beamerreturnbutton{Return to presentation}}
-% \end{frame}
-
-% %------------------------------------------------
-% \begin{frame}[noframenumbering]
-%     \label{Theorems}
-%     \frametitle{Appendix - Theorems}
-%     \begin{enumerate}
-%         \item A theorem\newline
-%     \end{enumerate}
-
-%     \hyperlink{Test Stat}{\beamerreturnbutton{Return to presentation}}
-% \end{frame}
 
 \end{document}
