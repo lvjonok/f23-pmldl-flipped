@@ -1,0 +1,30 @@
+{
+    "name": "latex-dev",
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "service": "vscode",
+    "runServices": [
+        "vscode"
+    ],
+    "shutdownAction": "stopCompose",
+    "workspaceFolder": "/workspace",
+    "postCreateCommand": "",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "james-yu.latex-workshop"
+            ],
+            "settings": {
+                // General settings
+                "files.eol": "\n",
+                // Latex settings
+                "latex-workshop.chktex.enabled": true,
+                "editor.formatOnSave": true,
+                "files.associations": {
+                    "*.tex": "latex"
+                }
+            }
+        }
+    }
+}

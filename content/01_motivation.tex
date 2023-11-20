@@ -1,0 +1,33 @@
+\section{Motivation} % Note all sections and subsections are automatically placed in your table of contents
+% \newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+%------------------------------------------------
+\begin{frame}
+    \frametitle{Why worry about learning rewards in RL?}
+
+    What could be an optimal control?
+
+    \begin{align}
+        \pi = \argmax_{\pi} E_{\mathbf{x}_{t+1} \thicksim p(\mathbf{x}_{t+1} | \mathbf{x}_{t}, \mathbf{u}_t), \mathbf{u}_{t+1} \thicksim \pi(\mathbf{u}_{t} | \mathbf{x}_{t})}[r(\mathbf{x}_t, \mathbf{u}_t)]
+    \end{align}
+
+    Better to optimize $r(\mathbf{x}_t, \mathbf{u}_t)$ to explain the data better.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Why worry about learning rewards in RL?}
+
+    Imitation learning perspective:
+
+    \begin{itemize}
+        \item Simply copying actions of expert has no reasoning
+        \item We want to infer the \textbf{intent}
+    \end{itemize}
+
+    RL perspective:
+
+    \begin{itemize}
+        \item Inferring reward is \textbf{underspecified} problem
+        \item Many rewards can explain the same behaviour equally-well
+    \end{itemize}
+\end{frame}

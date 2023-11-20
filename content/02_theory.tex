@@ -1,0 +1,45 @@
+\section{Theory}
+
+\begin{frame}
+    \frametitle{IRL vs RL formally}
+
+    \begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+        \begin{column}{0.5\textwidth} % Right column width
+            "Forward" reinforcement learning:
+            \begin{itemize}
+                \item states $\mathbf{x} \in \mathbf{X}$
+                \item controls $\mathbf{u} \in \mathbf{U}$
+                \item (sometimes) dynamics $f(\mathbf{x}^{+} | \mathbf{x}, \mathbf{u})$
+                \item reward $r(\mathbf{x}, \mathbf{u})$
+            \end{itemize}
+
+            Learn policy $\pi^{\ast} (\mathbf{u} | \mathbf{x})$
+        \end{column}
+        \begin{column}{0.5\textwidth} % Left column width
+            Inverse reinforcement learning:
+            \begin{itemize}
+                \item states $\mathbf{x} \in \mathbf{X}$
+                \item controls $\mathbf{u} \in \mathbf{U}$
+                \item (sometimes) dynamics $f(\mathbf{x}^{+} | \mathbf{x}, \mathbf{u})$
+                \item samples ${\tau_i}$ from $\pi^{\ast}(\tau)$
+            \end{itemize}
+
+            Learn $r_{\psi}(\mathbf{x}, \mathbf{u})$ to later learn policy $\pi^{\ast} (\mathbf{u} | \mathbf{x})$
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Reward function parameterization}
+
+    Linear reward function:
+
+    \begin{equation}
+        r_{\psi}(\mathbf{x}, \mathbf{u}) = \sum_{i} \psi_i f_i(\mathbf{x}, \mathbf{u}) = \psi^T \mathbf{f(\mathbf{x}, \mathbf{u})}
+    \end{equation}
+
+    In more complex case the reward could be a separate neural net mapping from $\mathbf{x}$ and $\mathbf{u}$ to $r_\psi(\mathbf{x}, \mathbf{u})$
+
+
+\end{frame}

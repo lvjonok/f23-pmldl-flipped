@@ -1,0 +1,29 @@
+\begin{frame}
+    \frametitle{IRL and GANs}
+
+    \begin{itemize}
+        \item Policy tries to fool the reward that it is a human demo
+        \item Reward tries to distinguish between human demo and artificial one
+    \end{itemize}
+
+    Correspondence:
+
+    \begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+        \begin{column}{0.5\textwidth} % Right column width
+            \begin{itemize}
+                \item trajectory $\tau$
+                \item policy $\pi \thicksim q(\tau)$
+                \item reward $\mathbf{r}$
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth} % Left column width
+            \begin{itemize}
+                \item sample $\mathbf{x}$
+                \item generator $\mathbf{G}$
+                \item discriminator $\mathbf{D}$
+            \end{itemize}
+        \end{column}
+    \end{columns}
+
+
+\end{frame}

@@ -1,0 +1,155 @@
+
+@inproceedings{manyar_inverse_2023,
+  title     = {Inverse {Reinforcement} {Learning} {Framework} for {Transferring} {Task} {Sequencing} {Policies} from {Humans} to {Robots} in {Manufacturing} {Applications}},
+  url       = {https://ieeexplore.ieee.org/document/10160687},
+  doi       = {10.1109/ICRA48891.2023.10160687},
+  abstract  = {In this work, we present an inverse reinforcement learning approach for solving the problem of task sequencing for robots in complex manufacturing processes. Our proposed framework is adaptable to variations in process and can perform sequencing for entirely new parts. We prescribe an approach to capture feature interactions in a demonstration dataset based on a metric that computes feature interaction coverage. We then actively learn the expert's policy by keeping the expert in the loop. Our training and testing results reveal that our model can successfully learn the expert's policy. We demonstrate the performance of our method on a real-world manufacturing application where we transfer the policy for task sequencing to a manipulator. Our experiments show that the robot can perform these tasks to produce human-competitive performance. Code and video can be found at: https://sites.google.com/usc.edu/irlfortasksequencing},
+  urldate   = {2023-11-16},
+  booktitle = {2023 {IEEE} {International} {Conference} on {Robotics} and {Automation} ({ICRA})},
+  author    = {Manyar, Omey M. and McNulty, Zachary and Nikolaidis, Stefanos and Gupta, Satyandra K.},
+  month     = may,
+  year      = {2023},
+  pages     = {849--856},
+  file      = {IEEE Xplore Abstract Record:/home/leo/Zotero/storage/I95WMICA/10160687.html:text/html;Manyar et al. - 2023 - Inverse Reinforcement Learning Framework for Trans.pdf:/home/leo/Zotero/storage/7F85V3AM/Manyar et al. - 2023 - Inverse Reinforcement Learning Framework for Trans.pdf:application/pdf}
+}
+
+@inproceedings{triest_learning_2023,
+  title     = {Learning {Risk}-{Aware} {Costmaps} via {Inverse} {Reinforcement} {Learning} for {Off}-{Road} {Navigation}},
+  url       = {https://ieeexplore.ieee.org/document/10161268},
+  doi       = {10.1109/ICRA48891.2023.10161268},
+  abstract  = {The process of designing costmaps for off-road driving tasks is often a challenging and engineering-intensive task. Recent work in costmap design for off-road driving focuses on training deep neural networks to predict costmaps from sensory observations using corpora of expert driving data. However, such approaches are generally subject to over-confident mis-predictions and are rarely evaluated in-the-loop on physical hardware. We present an inverse reinforcement learning-based method of efficiently training deep cost functions that are uncertainty-aware. We do so by leveraging recent advances in highly parallel model-predictive control and robotic risk estimation. In addition to demonstrating improvement at reproducing expert trajectories, we also evaluate the efficacy of these methods in challenging off-road navigation scenarios. We observe that our method significantly outperforms a geometric baseline, resulting in 44\% improvement in expert path reconstruction and 57\% fewer interventions in practice. We also observe that varying the risk tolerance of the vehicle results in qualitatively different navigation behaviors, especially with respect to higher-risk scenarios such as slopes and tall grass.33More detailed algorithms and additional visualizations are provided in the appendix Appendix (appendix link: tinyurl.com/mtkj63e8)},
+  urldate   = {2023-11-16},
+  booktitle = {2023 {IEEE} {International} {Conference} on {Robotics} and {Automation} ({ICRA})},
+  author    = {Triest, Samuel and Castro, Mateo Guaman and Maheshwari, Parv and Sivaprakasam, Matthew and Wang, Wenshan and Scherer, Sebastian},
+  month     = may,
+  year      = {2023},
+  pages     = {924--930},
+  file      = {IEEE Xplore Abstract Record:/home/leo/Zotero/storage/B6BKUVQC/10161268.html:text/html;Submitted Version:/home/leo/Zotero/storage/ZEFSZ2NL/Triest et al. - 2023 - Learning Risk-Aware Costmaps via Inverse Reinforce.pdf:application/pdf}
+}
+
+@inproceedings{phan-minh_driveirl_2023,
+  title      = {{DriveIRL}: {Drive} in {Real} {Life} with {Inverse} {Reinforcement} {Learning}},
+  shorttitle = {{DriveIRL}},
+  url        = {https://ieeexplore.ieee.org/document/10160449},
+  doi        = {10.1109/ICRA48891.2023.10160449},
+  abstract   = {In this paper, we introduce the first published planner to drive a car in dense, urban traffic using Inverse Reinforcement Learning (IRL). Our planner, DriveIRL, generates a diverse set of trajectory proposals and scores them with a learned model. The best trajectory is tracked by our self-driving vehicle's low-level controller. We train our trajectory scoring model on a 500+ hour real-world dataset of expert driving demonstrations in Las Vegas within the maximum entropy IRL framework. DriveIRL's benefits include: a simple design due to only learning the trajectory scoring function, a flexible and relatively interpretable feature engineering approach, and strong real-world performance. We validated DriveIRL on the Las Vegas Strip and demonstrated fully autonomous driving in heavy traffic, including scenarios involving cut-ins, abrupt braking by the lead vehicle, and hotel pickup/dropoff zones. Our dataset, a part of nuPlan, has been released to the public to help further research in this area.},
+  urldate    = {2023-11-16},
+  booktitle  = {2023 {IEEE} {International} {Conference} on {Robotics} and {Automation} ({ICRA})},
+  author     = {Phan-Minh, Tung and Howington, Forbes and Chu, Ting-Sheng and Tomov, Momchil S. and Beaudoin, Robert E. and Lee, Sang Uk and Li, Nanxiang and Dicle, Caglayan and Findler, Samuel and Suarez-Ruiz, Francisco and Yang, Bo and Omari, Sammy and Wolff, Eric M.},
+  month      = may,
+  year       = {2023},
+  pages      = {1544--1550},
+  file       = {IEEE Xplore Abstract Record:/home/leo/Zotero/storage/QZAPTDE6/10160449.html:text/html}
+}
+
+@inproceedings{yoo_learning_2022,
+  title     = {Learning {Multi}-{Task} {Transferable} {Rewards} via {Variational} {Inverse} {Reinforcement} {Learning}},
+  url       = {https://ieeexplore.ieee.org/document/9811697},
+  doi       = {10.1109/ICRA46639.2022.9811697},
+  abstract  = {Many robotic tasks are composed of a lot of temporally correlated sub-tasks in a highly complex environment. It is important to discover situational intentions and proper actions by deliberating on temporal abstractions to solve problems effectively. To understand the intention separated from changing task dynamics, we extend an empowerment-based regularization technique to situations with multiple tasks based on the framework of a generative adversarial network. Under the multitask environments with unknown dynamics, we focus on learning a reward and policy from the unlabeled expert examples. In this study, we define situational empowerment as the maximum of mutual information representing how an action conditioned on both a certain state and sub-task affects the future. Our proposed method derives the variational lower bound of the situational mutual information to optimize it. We simultaneously learn the transferable multi-task reward function and policy by adding an induced term to the objective function. By doing so, the multi-task reward function helps to learn a robust policy for environmental change. We validate the advantages of our approach on multi-task learning and multi-task transfer learning. We demonstrate our proposed method has the robustness of both randomness and changing task dynamics. Finally, we prove that our method has significantly better performance and data efficiency than existing imitation learning methods on various benchmarks.},
+  urldate   = {2023-11-19},
+  booktitle = {2022 {International} {Conference} on {Robotics} and {Automation} ({ICRA})},
+  author    = {Yoo, Se-Wook and Seo, Seung-Woo},
+  month     = may,
+  year      = {2022},
+  pages     = {434--440},
+  file      = {IEEE Xplore Abstract Record:/home/leo/Zotero/storage/GXYT64NA/9811697.html:text/html;Submitted Version:/home/leo/Zotero/storage/VE79HDPN/Yoo and Seo - 2022 - Learning Multi-Task Transferable Rewards via Varia.pdf:application/pdf}
+}
+
+@inproceedings{hoshino_opirl_2022,
+  title      = {{OPIRL}: {Sample} {Efficient} {Off}-{Policy} {Inverse} {Reinforcement} {Learning} via {Distribution} {Matching}},
+  shorttitle = {{OPIRL}},
+  url        = {https://ieeexplore.ieee.org/document/9811660},
+  doi        = {10.1109/ICRA46639.2022.9811660},
+  abstract   = {Inverse Reinforcement Learning (IRL) is attractive in scenarios where reward engineering can be tedious. However, prior IRL algorithms use on-policy transitions, which require intensive sampling from the current policy for stable and optimal performance. This limits IRL applications in the real world, where environment interactions can become highly expensive. To tackle this problem, we present Off-Policy Inverse Reinforcement Learning (OPIRL), which (1) adopts off-policy data distribution instead of on-policy and enables significant reduction of the number of interactions with the environment, (2) learns a reward function that is transferable with high generalization capabilities on changing dynamics, and (3) leverages mode-covering behavior for faster convergence. We demonstrate that our method is considerably more sample efficient and generalizes to novel environments through the experiments. Our method achieves better or comparable results on policy performance baselines with significantly fewer interactions. Furthermore, we empirically show that the recovered reward function generalizes to different tasks where prior arts are prone to fail.},
+  urldate    = {2023-11-19},
+  booktitle  = {2022 {International} {Conference} on {Robotics} and {Automation} ({ICRA})},
+  author     = {Hoshino, Hana and Ota, Kei and Kanezaki, Asako and Yokota, Rio},
+  month      = may,
+  year       = {2022},
+  pages      = {448--454},
+  file       = {IEEE Xplore Abstract Record:/home/leo/Zotero/storage/4N83NKEX/9811660.html:text/html;Submitted Version:/home/leo/Zotero/storage/XQUWR4KB/Hoshino et al. - 2022 - OPIRL Sample Efficient Off-Policy Inverse Reinfor.pdf:application/pdf}
+}
+
+@inproceedings{liao_online_2022,
+  title     = {Online {Prediction} of {Lane} {Change} with a {Hierarchical} {Learning}-{Based} {Approach}},
+  url       = {https://ieeexplore.ieee.org/document/9812269},
+  doi       = {10.1109/ICRA46639.2022.9812269},
+  abstract  = {In the foreseeable future, connected and auto-mated vehicles (CAVs) and human-driven vehicles will share the road networks together. In such a mixed traffic environment, CAVs need to understand and predict maneuvers of surrounding vehicles for safer and more efficient interactions, especially when human drivers bring in a wide range of uncertainties. In this paper, we propose a learning-based lane-change prediction algorithm that considers the driving behaviors of the target human driver. To provide accurate maneuver prediction, we adopt a hierarchical structure that seamlessly seals both the lane-change decision prediction and the vehicle trajectory pre-diction together. Specifically, we propose a lane-change decision prediction method based on a Long-Short Term Memory (LSTM) network, and a trajectories prediction considering driver preference and vehicular interactions based on Inverse Reinforcement Learning (IRL). To validate the performance of the proposed methodology, a case study of an on-ramp merging scenario is conducted on a uniquely built human-in-the-loop simulation platform that can provide an immersive driving environment, collect data of lane-change behaviors, and test drivers' reactions to the prediction results in real time. It is shown in the simulation results that we can predict the lane-change decision 3 seconds before the vehicle crosses the line to another lane, and the Mean Euclidean Distance between the predicted trajectory and ground truth is 0.39 meters within a 4-second prediction window.},
+  urldate   = {2023-11-19},
+  booktitle = {2022 {International} {Conference} on {Robotics} and {Automation} ({ICRA})},
+  author    = {Liao, Xishun and Wang, Ziran and Zhao, Xuanpeng and Zhao, Zhouqiao and Han, Kyungtae and Tiwari, Prashant and Barth, Matthew J. and Wu, Guoyuan},
+  month     = may,
+  year      = {2022},
+  pages     = {948--954},
+  file      = {Full Text PDF:/home/leo/Zotero/storage/QP28H6SZ/Liao et al. - 2022 - Online Prediction of Lane Change with a Hierarchic.pdf:application/pdf;IEEE Xplore Abstract Record:/home/leo/Zotero/storage/3FNAC923/9812269.html:text/html}
+}
+
+@inproceedings{zhao_personalized_2022,
+  title     = {Personalized {Car} {Following} for {Autonomous} {Driving} with {Inverse} {Reinforcement} {Learning}},
+  url       = {https://ieeexplore.ieee.org/document/9812446},
+  doi       = {10.1109/ICRA46639.2022.9812446},
+  abstract  = {Driving automation is gradually replacing human driving maneuvers in different applications such as adaptive cruise control and lane keeping. However, contemporary driving automation applications based on expert systems or prede-fined control strategies are not in line with individual human driver's preference. To overcome this problem, we propose a Personalized Adaptive Cruise Control (P-ACC) system that can learn the driver's car-following preferences from historical data using model-based maximum entropy Inverse Reinforcement Learning (IRL). Once activated in real-time, the P-ACC system first classifies the driver type and the weather type (at that moment). The vehicle is then controlled using the pre-trained IRL model on the cloud of the associated class. The personalized IRL model on the cloud will be updated as more human driving data is collected from various scenarios. Numerical simulation with real-world naturalistic driving data shows that, the accuracy of reproducing the real-world driving profile improves up to 30.1\% in terms of speed and 36.5\% in terms of distance gap, when P-ACC is compared with the Intelligent Driver Model (IDM). Game engine-based human-in-the-loop simulation demonstrates that, the takeover frequency of the driver during the usage of P-ACC decreases up to 93.4\%, compared with that during the usage of IDM-based ACC.},
+  urldate   = {2023-11-19},
+  booktitle = {2022 {International} {Conference} on {Robotics} and {Automation} ({ICRA})},
+  author    = {Zhao, Zhouqiao and Wang, Ziran and Han, Kyungtae and Gupta, Rohit and Tiwari, Prashant and Wu, Guoyuan and Barth, Matthew J.},
+  month     = may,
+  year      = {2022},
+  pages     = {2891--2897},
+  file      = {Full Text PDF:/home/leo/Zotero/storage/S75ERBEN/Zhao et al. - 2022 - Personalized Car Following for Autonomous Driving .pdf:application/pdf;IEEE Xplore Abstract Record:/home/leo/Zotero/storage/IZZLXZQA/9812446.html:text/html}
+}
+
+@inproceedings{quintero-pena_human-guided_2022,
+  title     = {Human-{Guided} {Motion} {Planning} in {Partially} {Observable} {Environments}},
+  url       = {https://ieeexplore.ieee.org/document/9811893},
+  doi       = {10.1109/ICRA46639.2022.9811893},
+  abstract  = {Motion planning is a core problem in robotics, with a range of existing methods aimed to address its diverse set of challenges. However, most existing methods rely on complete knowledge of the robot environment; an assumption that seldom holds true due to inherent limitations of robot perception. To enable tractable motion planning for high-DOF robots under partial observability, we introduce BLIND, an algorithm that leverages human guidance. BLIND utilizes inverse reinforcement learning to derive motion-level guidance from human critiques. The algorithm overcomes the computational challenge of reward learning for high-DOF robots by projecting the robot's continuous configuration space to a motion-planner-guided discrete task model. The learned reward is in turn used as guidance to generate robot motion using a novel motion planner. We demonstrate BLIND using the Fetch robot and perform two simulation experiments with partial observability. Our experiments demonstrate that, despite the challenge of partial observability and high dimensionality, BLIND is capable of generating safe robot motion and outperforms baselines on metrics of teaching efficiency, success rate, and path quality.},
+  urldate   = {2023-11-19},
+  booktitle = {2022 {International} {Conference} on {Robotics} and {Automation} ({ICRA})},
+  author    = {Quintero-Peña, Carlos and Chamzas, Constantinos and Sun, Zhanyi and Unhelkar, Vaibhav and Kavraki, Lydia E.},
+  month     = may,
+  year      = {2022},
+  pages     = {7226--7232},
+  file      = {IEEE Xplore Abstract Record:/home/leo/Zotero/storage/WWLZB6FH/9811893.html:text/html;Quintero-Peña et al. - 2022 - Human-Guided Motion Planning in Partially Observab.pdf:/home/leo/Zotero/storage/KUFZ5Q6N/Quintero-Peña et al. - 2022 - Human-Guided Motion Planning in Partially Observab.pdf:application/pdf}
+}
+
+@article{ziebart_maximum_nodate,
+  title    = {Maximum {Entropy} {Inverse} {Reinforcement} {Learning}},
+  abstract = {Recent research has shown the beneﬁt of framing problems of imitation learning as solutions to Markov Decision Problems. This approach reduces learning to the problem of recovering a utility function that makes the behavior induced by a near-optimal policy closely mimic demonstrated behavior. In this work, we develop a probabilistic approach based on the principle of maximum entropy. Our approach provides a well-deﬁned, globally normalized distribution over decision sequences, while providing the same performance guarantees as existing methods.},
+  language = {en},
+  author   = {Ziebart, Brian D and Maas, Andrew and Bagnell, J Andrew and Dey, Anind K},
+  file     = {Ziebart et al. - Maximum Entropy Inverse Reinforcement Learning.pdf:/home/leo/Zotero/storage/34RZ2WZU/Ziebart et al. - Maximum Entropy Inverse Reinforcement Learning.pdf:application/pdf}
+}
+
+@misc{finn_guided_2016,
+  title      = {Guided {Cost} {Learning}: {Deep} {Inverse} {Optimal} {Control} via {Policy} {Optimization}},
+  shorttitle = {Guided {Cost} {Learning}},
+  url        = {http://arxiv.org/abs/1603.00448},
+  doi        = {10.48550/arXiv.1603.00448},
+  abstract   = {Reinforcement learning can acquire complex behaviors from high-level specifications. However, defining a cost function that can be optimized effectively and encodes the correct task is challenging in practice. We explore how inverse optimal control (IOC) can be used to learn behaviors from demonstrations, with applications to torque control of high-dimensional robotic systems. Our method addresses two key challenges in inverse optimal control: first, the need for informative features and effective regularization to impose structure on the cost, and second, the difficulty of learning the cost function under unknown dynamics for high-dimensional continuous systems. To address the former challenge, we present an algorithm capable of learning arbitrary nonlinear cost functions, such as neural networks, without meticulous feature engineering. To address the latter challenge, we formulate an efficient sample-based approximation for MaxEnt IOC. We evaluate our method on a series of simulated tasks and real-world robotic manipulation problems, demonstrating substantial improvement over prior methods both in terms of task complexity and sample efficiency.},
+  urldate    = {2023-11-20},
+  publisher  = {arXiv},
+  author     = {Finn, Chelsea and Levine, Sergey and Abbeel, Pieter},
+  month      = may,
+  year       = {2016},
+  note       = {arXiv:1603.00448 [cs]},
+  keywords   = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Computer Science - Robotics},
+  annote     = {Comment: International Conference on Machine Learning (ICML), 2016, to appear},
+  file       = {arXiv Fulltext PDF:/home/leo/Zotero/storage/8ZB3FXCP/Finn et al. - 2016 - Guided Cost Learning Deep Inverse Optimal Control.pdf:application/pdf;arXiv.org Snapshot:/home/leo/Zotero/storage/V4L9A4V6/1603.html:text/html}
+}
+
+@misc{finn_connection_2016,
+  title     = {A {Connection} between {Generative} {Adversarial} {Networks}, {Inverse} {Reinforcement} {Learning}, and {Energy}-{Based} {Models}},
+  url       = {http://arxiv.org/abs/1611.03852},
+  doi       = {10.48550/arXiv.1611.03852},
+  abstract  = {Generative adversarial networks (GANs) are a recently proposed class of generative models in which a generator is trained to optimize a cost function that is being simultaneously learned by a discriminator. While the idea of learning cost functions is relatively new to the field of generative modeling, learning costs has long been studied in control and reinforcement learning (RL) domains, typically for imitation learning from demonstrations. In these fields, learning cost function underlying observed behavior is known as inverse reinforcement learning (IRL) or inverse optimal control. While at first the connection between cost learning in RL and cost learning in generative modeling may appear to be a superficial one, we show in this paper that certain IRL methods are in fact mathematically equivalent to GANs. In particular, we demonstrate an equivalence between a sample-based algorithm for maximum entropy IRL and a GAN in which the generator's density can be evaluated and is provided as an additional input to the discriminator. Interestingly, maximum entropy IRL is a special case of an energy-based model. We discuss the interpretation of GANs as an algorithm for training energy-based models, and relate this interpretation to other recent work that seeks to connect GANs and EBMs. By formally highlighting the connection between GANs, IRL, and EBMs, we hope that researchers in all three communities can better identify and apply transferable ideas from one domain to another, particularly for developing more stable and scalable algorithms: a major challenge in all three domains.},
+  urldate   = {2023-11-20},
+  publisher = {arXiv},
+  author    = {Finn, Chelsea and Christiano, Paul and Abbeel, Pieter and Levine, Sergey},
+  month     = nov,
+  year      = {2016},
+  note      = {arXiv:1611.03852 [cs]},
+  keywords  = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
+  annote    = {Comment: NIPS 2016 Workshop on Adversarial Training. First two authors contributed equally},
+  file      = {arXiv Fulltext PDF:/home/leo/Zotero/storage/HZZU52LW/Finn et al. - 2016 - A Connection between Generative Adversarial Networ.pdf:application/pdf;arXiv.org Snapshot:/home/leo/Zotero/storage/8Q5XMPBU/1611.html:text/html}
+}
